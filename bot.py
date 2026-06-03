@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 # Initialize Gemini Client
 ai_client = genai.Client(api_key=GEMINI_KEY)
 
-# Dictionary to store user states (in-memory for simplicity)
+# Dictionary to store user states (in-memory)
 user_data = {}
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
